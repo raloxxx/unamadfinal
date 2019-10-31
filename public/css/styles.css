@@ -362,9 +362,10 @@ body {
   color: var(--color-white);
 }
 
-.unamad__logo {
-  font-style: italic;
-  font-size: 4rem;
+.unamad__logo img {
+  border-radius: 1rem;
+  width: 20rem;
+  height: 6rem;
 }
 
 .unamad__menu-link {

@@ -20,7 +20,7 @@
       <div class="row">
         <div class="col d-flex align-items-center justify-content-between relative">
           <h1 class="unamad__logo mb-0">
-            COATI
+            <img src="public/images/Recurso 2.jpg" width="300" height="70" alt="">
           </h1>
           <i id="iconMenu" class="fas fa-bars unamad__menu-icon"></i>
           <nav class="unamad__menu" id="menu">
@@ -39,8 +39,7 @@
     <div class="unamad__back-slider"></div>
     <div class="unamad__title-carousel">
       <h2>CONGRESO INTERNACIONAL AMAZONICO DE TECNOLOGIA INFORMATICA</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit assumenda corporis aperiam praesentium, cumque
-        est?</p>
+      <p>“La innovación constante es la única forma de mantenerse competitivo”</p>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -300,39 +299,41 @@
           <div class="row mb-0 mb-md-5">
             <div class="col-md-6">
               <div class="form-group">
-                <label class="unamad__form-label" for="">DNI</label>
-                <input type="text" class="unamad__input">
+                <label class="unamad__form-label" for="dni">DNI</label>
+                <input type="text" class="unamad__input" id="dni">
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <label class="unamad__form-label" for="">Nombres</label>
-                <input type="text" class="unamad__input">
+                <label class="unamad__form-label" for="name">Nombres</label>
+                <input type="text" class="unamad__input" id="name">
               </div>
             </div>
           </div>
           <div class="row mb-0 mb-md-5">
             <div class="col-md-6">
               <div class="form-group">
-                <label class="unamad__form-label" for="">Apellidos</label>
-                <input type="text" class="unamad__input">
+                <label class="unamad__form-label" for="lastName">Apellidos</label>
+                <input type="text" class="unamad__input" id="lastName">
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <label class="unamad__form-label" for="">Correo</label>
-                <input type="text" class="unamad__input">
+                <label class="unamad__form-label" for="email">Correo</label>
+                <input type="email" class="unamad__input" id="email">
               </div>
             </div>
           </div>
           <div class="form-group">
-            <label class="unamad__form-label" for="">Universidad</label>
-            <input type="text" class="unamad__input">
+            <label class="unamad__form-label" for="university">Universidad</label>
+            <input type="text" class="unamad__input" id="university">
           </div>
           <div class="form-group">
-            <input type="submit" value="Registrarse" class="unamad__submit">
+            <input id="btn" type="submit" value="Registrarse" class="unamad__submit">
           </div>
         </form>
+        <div class="alert alert-success text-center" id="alertSuccess">Registrado correctamente :)</div>
+        <div class="alert alert-danger text-center" id="alertDanger">Ups :( tenemos problemas para registrar</div>
       </div>
     </div>
   </div>
@@ -344,7 +345,7 @@
         </div>
         <div class="unamad__footer-logo col-12 d-flex flex-wrap justify-content-md-center justify-content-lg-between justify-content flex-md-row align-items-center flex-column mb-50">
           <img src="public/images/logoCarrera.png" alt="Logo carrera" width="300">
-          <img src="public/images/logounamad.png" alt="Logo Unamad">
+          <img src="public/images/LOGO UNAMAD.png" alt="Logo Unamad">
         </div>
         <div class="col-12 unamad__footer-inferior">
           <p class="text-center">© 2019. All rights reserved | Design by BYTECODE.</p>
@@ -361,6 +362,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js" integrity="sha256-S1J4GVHHDMiirir9qsXWc8ZWw74PHHafpsHp5PXtjTs=" crossorigin="anonymous"></script>
   <script src="public/js/app.js"></script>
 </body>
 

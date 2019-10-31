@@ -12,9 +12,8 @@ html {
   --color-black-1: #000;
   --color-black-2: #222;
   --color-gray: #f8f9fa;
-  --color-primary: #db1e4a;
+  --color-primary: rgb(219, 30, 74);
   --color-primary-2: #e6355e;
-  --color-yellow: #da9d40;
   --color-gray-2: #cccccc;
   --color-gray-3: #f8f9fa;
   --color-white: #fff;
@@ -63,6 +62,10 @@ body {
 .mb-40 {
   margin-bottom: 4rem;
 }
+
+.relative {
+  position: relative !important;
+}
 /*UTILIDADES*/
 
 .unamad__card {
@@ -88,7 +91,10 @@ body {
 }
 
 .unamad__banner {
-  background-image: url('https://demo.w3layouts.com/demos_new/template_demo/05-06-2019/commute_demo_Free/1199547472/web/images/banner4.jpg');
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.45), 
+    rgba(0, 0, 0, 0.45)
+  ), url('http://www.unamad.edu.pe/images/2019/09/12/fondo_from01.jpg');
   background-size: cover;
 }
 
@@ -98,7 +104,7 @@ body {
 }
 
 .unamad__banner-text {
-  color: var(--color-gray-2);
+  color: var(--color-white);
   font-size: 1.4rem;
 }
 
@@ -117,7 +123,7 @@ body {
 }
 
 .unamad__banner-item p {
-  color: var(--color-gray-2);
+  color: var(--color-white);
   font-size: 1.4rem;
 }
 
@@ -145,6 +151,49 @@ body {
   box-shadow: 0rem 0rem 1.869rem 0.231rem rgba(204, 204, 223, 0.5);
 }
 
+.unamad__speaker {
+  position: relative;
+  height: 40rem;
+  margin-bottom: 4rem;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 .3rem .5rem rgba(0,0,0,0.2);
+}
+
+.unamad__speaker-info {
+  background: linear-gradient(
+    rgb(219, 30, 74, .9),
+    rgba(0, 0, 0, .9)
+  );
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: var(--color-white);
+  padding: 2rem;
+  bottom: 100%;
+  transition: all .3s;
+}
+
+.unamad__speaker-info h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.unamad__speaker-info p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.unamad__speaker-img {
+  width: 100%;
+  height: 100% !important;
+}
+
+.unamad__speaker:hover .unamad__speaker-info{
+  bottom: 0;
+}
+
 .unamad__speakers span {
   font-size: 1.4rem;
   font-style: italic;
@@ -158,11 +207,6 @@ body {
   color: var(--color-primary);
 }
 
-.unamad__speaker-img {
-  border-radius: 50%;
-  height: 9rem;
-  width: 9rem;
-}
 
 .unamad__speakers-content {
   display: flex;
@@ -212,15 +256,9 @@ body {
   display: block;
   transition: all .3s;
   color: var(--color-primary);
-  position: absolute;
-  top: 1rem;
   font-weight: 700;
 }
 
-
-.unamad__input:focus + .unamad__form-label {
-  top: -1.8rem;
-}
 
 .unamad__submit {
   background-color: var(--color-primary);
@@ -257,6 +295,26 @@ body {
 }
 
 /* SLIDER */
+.unamad__title-carousel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--color-white);
+}
+
+.unamad__title-carousel h2 {
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: .5rem;
+  font-size: 3.5rem;
+}
+
+.unamad__title-carousel p {
+  font-size: 1.8rem;
+}
 
 .unamad__back-slider {
   position: absolute;
@@ -301,9 +359,6 @@ body {
   font-size: 4rem;
 }
 
-.unamad__menu {
-}
-
 .unamad__menu-link {
   color: var(--color-white);
   font-size: 1.6rem;
@@ -315,15 +370,36 @@ body {
 .unamad__menu-link:hover {
   color: var(--color-gray);
 }
+
+.unamad__menu-icon {
+  display: none;
+  font-size: 2.2rem;
+  background-color: var(--color-primary);
+  padding: 1rem 2rem;
+  cursor: pointer;
+  opacity: .8;
+  transition: all .3s;
+  z-index: 1000;
+}
+
+.unamad__menu-icon:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
 /* HEADER */
 
 @media (max-width: 992px) { 
   html {
     font-size: 56.25%;
   }
+
 }
 
 @media (max-width: 768px) { 
+  .unamad__header {
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
   html {
     font-size: 50%;
   }
@@ -338,5 +414,59 @@ body {
   
   .pt-100 {
     padding-top: 6rem;
+  }
+
+  .unamad__menu {
+    max-height: 30rem;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  .unamad__header {
+    padding-right: 8rem;
+    padding-left: 8rem;
+  }
+
+  .unamad__menu.active {
+    display: block;
+    top: 95%;
+    right: 1.8rem;
+    background-color: var(--color-white);
+    opacity: .8;
+    height: auto;
+  }
+
+  .unamad__menu.active .unamad__menu-link {
+    display: block;
+    color: var(--color-black);
+    padding: 1.5rem 8rem;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .unamad__menu.active .unamad__menu-link:hover {
+    color: var(--color-primary);
+  }
+
+  .unamad__menu-icon {
+    display: block;
+  }
+}
+
+
+@media (max-width: 576px) { 
+  .unamad__title-carousel h2 {
+    font-size: 1rem;
+  }
+
+  .unamad__title-carousel p {
+    font-size: 1rem;
+  }
+
+  .unamad__header {
+    padding: 1rem 0;
+    padding-right: 6rem;
+    padding-left: 6rem;
   }
 }

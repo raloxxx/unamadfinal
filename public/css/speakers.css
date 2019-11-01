@@ -1,0 +1,81 @@
+.unamad__speakers .unamad__card {
+  background-color: var(--color-white);
+  box-shadow: 0rem 0rem 1.869rem 0.231rem rgba(204, 204, 223, 0.5);
+}
+
+.unamad__speaker {
+  position: relative;
+  height: 40rem;
+  margin-bottom: 4rem;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 .3rem .5rem rgba(0,0,0,0.2);
+}
+
+.unamad__speaker-info {
+  background: linear-gradient(
+    rgb(219, 30, 74, .9),
+    rgba(0, 0, 0, .9)
+  );
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: var(--color-white);
+  padding: 2rem;
+  bottom: 100%;
+  transition: all .3s;
+}
+
+.unamad__speaker-info h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.unamad__speaker-info p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.unamad__speaker-img {
+  width: 100%;
+  height: 100% !important;
+}
+
+.unamad__speaker:hover .unamad__speaker-info{
+  bottom: 0;
+}
+
+.unamad__speakers span {
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+
+.unamad__speakers span::before {
+  color: var(--color-primary);
+}
+.unamad__speakers-content {
+  display: flex;
+  align-items: center;
+}
+
+.unamad__speakers-content-profile {
+  margin-left: 2rem;
+}
+
+.unamad__speakers-name {
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.unamad__speakers-name + span {
+  color: var(--color-gray-2);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}

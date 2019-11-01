@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  --color-black: #323648;
+  --color-black-1: #000;
+  --color-black-2: #222;
+  --color-gray: #f8f9fa;
+  --color-primary: rgb(219, 30, 74);
+  --color-primary-2: #e6355e;
+  --color-gray-2: #f1f1f1;
+  --color-gray-3: #f8f9fa;
+  --color-white: #fff;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: .2rem;
+}

@@ -24,8 +24,6 @@ function enviar(e) {
   var dni = document.getElementById("dni");
   var email = document.getElementById("email");
   var universidad = document.getElementById("university");
-  var success = document.getElementById("success");
-  var danger = document.getElementById("danger");
 
 
   if (dni.value.length != 8 || dni.value.length == 0) {
@@ -43,7 +41,6 @@ function enviar(e) {
       email: email.value,
       universidad: universidad.value
     }).then((res) => {
-      console.log(res.data);
       name.value = '';
       lastName.value = '';
       dni.value = '';

@@ -1,0 +1,83 @@
+.unamad__title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.unamad__card {
+  background-color: var(--color-gray);
+  box-shadow: .7rem .7rem .7rem 0 rgba(76, 110, 245, .1);
+  margin-bottom: 2.5rem;
+  padding: 5rem 2rem;
+}
+
+.unamad__card-icon {
+  color: var(--color-primary);
+  font-size: 4rem;
+}
+
+.unamad__card-title {
+  color: var(--color-primary);
+  font-size: 2rem;
+}
+
+.unamad__card-text {
+  line-height: 2.5rem;
+  font-size: 1.4rem;
+}
+
+.unamad__banner {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.45), 
+    rgba(0, 0, 0, 0.45)
+  ), url('http://www.unamad.edu.pe/images/2019/09/12/fondo_from01.jpg');
+  background-size: cover;
+}
+
+.unamad__banner-title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.unamad__banner-text {
+  color: var(--color-white);
+  font-size: 1.4rem;
+}
+
+.unamad__banner-subtitle {
+  font-size: 2rem;
+}
+
+.unamad__banner-subtitle span {
+  color: var(--color-primary);
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.unamad__banner-item {
+  margin-top: 2rem;
+}
+
+.unamad__banner-item p {
+  color: var(--color-white);
+  font-size: 1.4rem;
+}
+
+.unamad__banner-item h4 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.unamad__banner-item i {
+  color: var(--color-black);
+  background-color: var(--color-gray-3);
+  font-size: 2rem;
+  padding: 1.5rem;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

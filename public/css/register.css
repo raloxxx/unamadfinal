@@ -1,0 +1,42 @@
+.unamad__register {
+  padding: 0 10rem;
+}
+
+.unamad__form > div {
+  position: relative;
+  margin-bottom: 4rem;
+} 
+
+.unamad__input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  border-bottom: .2rem solid var(--color-primary);
+  position: relative;
+  z-index: 999;
+  background-color: transparent;
+}
+
+.unamad__form-label {
+  font-size: 1.4rem;
+  display: block;
+  transition: all .3s;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+
+.unamad__submit {
+  background-color: var(--color-primary);
+  padding: 1rem 6rem;
+  border: none;
+  color: var(--color-white);
+  font-size: 1.4rem;
+  transition: all .3s;
+}
+
+.unamad__submit:hover {
+  background-color: var(--color-primary-2);
+}

@@ -11,19 +11,26 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
     integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="public/css/styles.css">
+  <link rel="stylesheet" href="public/css/base.css">
+  <link rel="stylesheet" href="public/css/utilities.css">
+  <link rel="stylesheet" href="public/css/header.css">
+  <link rel="stylesheet" href="public/css/base.css">
+  <link rel="stylesheet" href="public/css/banner.css">
+  <link rel="stylesheet" href="public/css/slider.css">
+  <link rel="stylesheet" href="public/css/speakers.css">
+  <link rel="stylesheet" href="public/css/tallers.css">
+  <link rel="stylesheet" href="public/css/register.css">
+  <link rel="stylesheet" href="public/css/footer.css">
+  <link rel="stylesheet" href="public/css/responsive.css">
 </head>
 
 <body>
   <header class="unamad__header" id="inicio">
     <div class="container">
       <div class="row">
-        <div class="col d-flex align-items-center justify-content-between relative">
-          <h1 class="unamad__logo mb-0">
-            <img src="public/images/Recurso 2.jpg" width="300" height="70" alt="">
-          </h1>
+        <div class="col d-flex align-items-center justify-content-center justify-content-md-between relative">
           <i id="iconMenu" class="fas fa-bars unamad__menu-icon"></i>
-          <nav class="unamad__menu" id="menu">
+          <nav class="unamad__menu d-md-flex  w-100 justify-content-md-around" id="menu">
             <a href="#inicio" class="unamad__menu-link">Inicio</a>
             <a href="#acerca" class="unamad__menu-link">Acerca de</a>
             <a href="#ponentes" class="unamad__menu-link">Ponentes</a>
@@ -38,7 +45,7 @@
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="unamad__back-slider"></div>
     <div class="unamad__title-carousel">
-      <h2>CONGRESO INTERNACIONAL AMAZONICO DE TECNOLOGIA INFORMATICA</h2>
+      <img src="public/images/Recurso 2.jpg" width="600" alt="">
       <p>“La innovación constante es la única forma de mantenerse competitivo”</p>
     </div>
     <div class="carousel-inner">
@@ -149,83 +156,247 @@
       <div class="col-lg-4 col-sm-12 col-md-6">
         <div class="unamad__speaker">
           <div class="unamad__speaker-info">
-            <h3>DR. FELIPE MOURA DE CARVALHO</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, necessitatibus voluptas. Minima
-              deleniti magni quis, autem voluptatem inventore repellendus pariatur ex veniam tempore? Dolor esse commodi
-              cumque vero facilis deserunt incidunt provident at. Eos quasi earum doloribus maxime exercitationem ipsum!
+            <h3>NAVARRO VEGA JOSE CARLOS</h3>
+
+            <p>
+              Egresado de la Maestría Gerencia de Tecnologías de la Información
+              de la Universidad Nacional San Agustín de Arequipa, Ingeniero
+              Informático y de Sistemas de la Universidad Nacional San Antonio
+              Abad del Cusco, estudios en herramientas GIS, Redes y Teleproceso,
+              Infraestructura de Datos Espaciales. Ocupó cargos como Jefe de la
+              Unidad de Informática, coordinador de la Infraestructura de Datos
+              Espaciales y Analista de Sistemas del Gobierno Regional de Madre
+              de Dios.
             </p>
+
           </div>
-          <img class="unamad__speaker-img"
-            src="http://directorio.concytec.gob.pe/appDirectorioCTI/UploadFotoPath.do?tipo=visualizar_archivo&id_investigador=1980&ruta=/documents/docInvestigadores/1980/imagenes/FotoCesar-Beltran2.jpg&content_type=image/jpeg"
-            alt="Ponente">
+          <img class="unamad__speaker-img" src="./fotosponentes/navarro.jpg" alt="Ponente">
         </div>
       </div>
       <div class="col-lg-4 col-sm-12 col-md-6">
         <div class="unamad__speaker">
           <div class="unamad__speaker-info">
-            <h3>DR. FELIPE MOURA DE CARVALHO</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, necessitatibus voluptas. Minima
-              deleniti magni quis, autem voluptatem inventore repellendus pariatur ex veniam tempore? Dolor esse commodi
-              cumque vero facilis deserunt incidunt provident at. Eos quasi earum doloribus maxime exercitationem ipsum!
+            <h3>NINA CHOQUEHUAYTA WILDER</h3>
+            <p>
+              M.Cs. Informática mención Tecnologías de Información en
+              la Universidad de San Agustín. Con experiencia en Artificial
+              Intelligence, GeoBigData, Remote Sensing, High Performace
+              Computing, Cloud Computing y Mobile Computing. Actualmente soy
+              docente en la Universidad Tecnologica del Perú e investigador en
+              Centro de Investigación, Transferencia de tecnologías y Desarrollo
+              de Software I+D+i (CiTeSoft) de la UNSA. Tambien tengo el cargo
+              CEO de la empresa VEOX, realiza investigación
+              aplicada en BigData, Remote Sensing y Artificial Intelligence en
+              el ámbito de Pesca y Agricultura.
             </p>
           </div>
-          <img class="unamad__speaker-img"
-            src="http://directorio.concytec.gob.pe/appDirectorioCTI/UploadFotoPath.do?tipo=visualizar_archivo&id_investigador=1980&ruta=/documents/docInvestigadores/1980/imagenes/FotoCesar-Beltran2.jpg&content_type=image/jpeg"
-            alt="Ponente">
+          <img class="unamad__speaker-img" src="./fotosponentes/nina.jpg" alt="Ponente">
         </div>
       </div>
       <div class="col-lg-4 col-sm-12 col-md-6">
         <div class="unamad__speaker">
           <div class="unamad__speaker-info">
-            <h3>DR. FELIPE MOURA DE CARVALHO</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, necessitatibus voluptas. Minima
-              deleniti magni quis, autem voluptatem inventore repellendus pariatur ex veniam tempore? Dolor esse commodi
-              cumque vero facilis deserunt incidunt provident at. Eos quasi earum doloribus maxime exercitationem ipsum!
+            <h3>CRUZ DE LA CRUZ JOSE EMMANUEL</h3>
+            <p>
+              Doctor en ciencias: ingenieria mecatronico en la Universidad
+              Nacional San Agustin bachiller en ingenieria electronico de la
+              universidad nacional de San Agustin y Maestro en ciencias de la
+              ingenieria electronica, especialidad, con mencion en
+              automatizacion de procesos con una amplia experiencia en
+              produccion cientifica y proyectos de investigacion. Autor de
+              distintos articulos en revistas cientificas.
             </p>
           </div>
-          <img class="unamad__speaker-img"
-            src="http://directorio.concytec.gob.pe/appDirectorioCTI/UploadFotoPath.do?tipo=visualizar_archivo&id_investigador=1980&ruta=/documents/docInvestigadores/1980/imagenes/FotoCesar-Beltran2.jpg&content_type=image/jpeg"
-            alt="Ponente">
+          <img class="unamad__speaker-img" src="./fotosponentes/josecruz.jpg" alt="Ponente">
         </div>
       </div>
       <div class="col-lg-4 col-sm-12 col-md-6">
         <div class="unamad__speaker">
-          <img class="unamad__speaker-img"
-            src="http://directorio.concytec.gob.pe/appDirectorioCTI/UploadFotoPath.do?tipo=visualizar_archivo&id_investigador=1980&ruta=/documents/docInvestigadores/1980/imagenes/FotoCesar-Beltran2.jpg&content_type=image/jpeg"
-            alt="Ponente">
+          <img class="unamad__speaker-img" src="./fotosponentes/helar.jpg" alt="Ponente">
           <div class="unamad__speaker-info">
-            <h3>DR. FELIPE MOURA DE CARVALHO</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, necessitatibus voluptas. Minima
-              deleniti magni quis, autem voluptatem inventore repellendus pariatur ex veniam tempore? Dolor esse commodi
-              cumque vero facilis deserunt incidunt provident at. Eos quasi earum doloribus maxime exercitationem ipsum!
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-12 col-md-6">
-        <div class="unamad__speaker">
-          <img class="unamad__speaker-img"
-            src="http://directorio.concytec.gob.pe/appDirectorioCTI/UploadFotoPath.do?tipo=visualizar_archivo&id_investigador=1980&ruta=/documents/docInvestigadores/1980/imagenes/FotoCesar-Beltran2.jpg&content_type=image/jpeg"
-            alt="Ponente">
-          <div class="unamad__speaker-info">
-            <h3>DR. FELIPE MOURA DE CARVALHO</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, necessitatibus voluptas. Minima
-              deleniti magni quis, autem voluptatem inventore repellendus pariatur ex veniam tempore? Dolor esse commodi
-              cumque vero facilis deserunt incidunt provident at. Eos quasi earum doloribus maxime exercitationem ipsum!
+            <h3>HELARF FERRER CALSINA CONDORI</h3>
+            <p>
+              Ingeniero de Electrónico de la UNA-Puno,
+              Magister Scientae en Informática, Doctorando en Ciencia,
+              Tecnología y Ambiente de la UNA - Puno.
+              Presidente del Capítulo de Ingeniería Electrónica del Colegio de
+              Ingenieros del Perú – Consejo Departamental Puno. Gold Member of
+              Institute of Institute of Electrical and Electronics Engineers.
+              Especialista en desarrollo de Proyectos en Telecomunicaciones y
+              Telemática. Consultor de proyectos en telecomunicaciones. Gerente
+              general de FERRER INGENIEROS SAC. Publicaciones de Artículos
+              científicos en IEEE Xplore.
             </p>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-sm-12 col-md-6">
         <div class="unamad__speaker">
-          <img class="unamad__speaker-img"
-            src="http://directorio.concytec.gob.pe/appDirectorioCTI/UploadFotoPath.do?tipo=visualizar_archivo&id_investigador=1980&ruta=/documents/docInvestigadores/1980/imagenes/FotoCesar-Beltran2.jpg&content_type=image/jpeg"
-            alt="Ponente">
+          <img class="unamad__speaker-img" src="./fotosponentes/vidangos.jpg" alt="Ponente">
           <div class="unamad__speaker-info">
-            <h3>DR. FELIPE MOURA DE CARVALHO</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, necessitatibus voluptas. Minima
-              deleniti magni quis, autem voluptatem inventore repellendus pariatur ex veniam tempore? Dolor esse commodi
-              cumque vero facilis deserunt incidunt provident at. Eos quasi earum doloribus maxime exercitationem ipsum!
+            <h3>GABINO REY VIDANGOS PONCE</h3>
+            <p>
+              Es un Ingeniero Electronico con Maestria en Automatizacion y
+              Mecatronica, Graduado de la UNA-Puno Peru y LETI San Petersburgo –
+              Rusia.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12 col-md-6">
+        <div class="unamad__speaker">
+          <img class="unamad__speaker-img" src="./fotosponentes/cristina.jpg" alt="Ponente">
+          <div class="unamad__speaker-info">
+            <h3>MOZO ZARATE YESSICA CRISTINA</h3>
+            <p>
+              Profesional en Informática y Sistemas con maestría en Educación, amplia experiencia en Capacitaciones a
+              Docentes y
+              docencia en educación Superior. Manejo de herramientas informáticas en el ámbito educativo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12 col-md-6">
+        <div class="unamad__speaker">
+          <img class="unamad__speaker-img" src="./fotosponentes/churachambi.jpg" alt="Ponente">
+          <div class="unamad__speaker-info">
+            <h3>MSc. Roberto Chura Chambi</h3>
+            <p>
+              Graduado en la Universidad Nacional de San Agustín de Arequipa en Ingeniería Electrónica, con
+              maestría en Ingeniería Eléctrica por la Universidade de São Paulo.
+              Posee experiencia en el área de Ingeniería Electrónica, con
+              énfasis en el Diseño de Circuitos Integrados Digitales, actuando principalmente en las áreas de:
+              Especificación y
+              arquitectura de sistemas digitales, Diseño y verificación de SoCs, prototipado en FPGAs, flujo de
+              Front-end y Back-end
+              para el diseño de circuitos integrados digitales, Arquitectura de
+              ordenadores.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-12 col-md-6">
+        <div class="unamad__speaker">
+          <img class="unamad__speaker-img" src="./fotosponentes/barrientos.jpg" alt="Ponente">
+          <div class="unamad__speaker-info">
+            <h3>JOSE ESTEBAN BARRIENTOS APUMAYTA</h3>
+            <p>
+              Graduação em Electrónica pelo Instituto de Educación Superior Tecnológico Público José Pardo (IESTPJP).
+              Graduação em
+              Engenheira de Sistemas pela Universidad Nacional Tecnológica de Lima Sur (UNTELS). Pós-Graduação em
+              Ciência da
+              Computação pela Universidade Federal Do Acre (UFAC). área de interesse Métodos de Otimização, Algoritmos
+              Genéticos e
+              Processamento Digital de Imagens
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-12 col-md-6">
+        <div class="unamad__speaker">
+          <img class="unamad__speaker-img" src="./fotosponentes/silueta.png" alt="Ponente">
+          <div class="unamad__speaker-info">
+            <h3>Msc. Alex Yanahuaya Arce</h3>
+            <p>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-12 col-md-6">
+        <div class="unamad__speaker">
+          <img class="unamad__speaker-img" src="./fotosponentes/calle.jpg" alt="Ponente">
+          <div class="unamad__speaker-info">
+            <h3>Msc. Humberto Fernandez Calle</h3>
+            <p>
+              Licenciado en Informática, Universidad Mayor de San Andrés (UMSA), Magister en Ciencias de la Educación
+              Superior,
+              Universidad Amazónica de Pando (UAP) y la Universidad Enrique José Barona de Cuba, Especialista en
+              Desarrollo curricular
+              en la enseñanza Superior, otorgada por el CEUB, Diplomado en Formación Tutorial para el desarrollo de la
+              investigación
+              científica y Diplomado en Formación Basada en competencias (UAP), Diplomado en seguridad en informática
+              (UAP).
+              Doctorante en Ciencias de la Educación 2012-2019.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-12 col-md-6">
+        <div class="unamad__speaker">
+          <img class="unamad__speaker-img" src="./fotosponentes/yapu.PNG" alt="Ponente">
+          <div class="unamad__speaker-info">
+            <h3>Univ. Efrain Yapu</h3>
+            <p>
+              Nacionalidad Boliviana, el Univ. Efrain Yapu Huanca es estudiante investigador de la carrera de
+              Ingenieria de Sistemas especialista en Realidad Aumentada.
+              Actualmente es estudiante de la Universidad Amazonica de Pando, Bolivia en programa de
+              pregrado.
+              Actualmente Socio de la Sociedad Cientifica de Estudiantes de Ingenieria de Sistemas de la
+              Universidad Amazonica de Pando(Bolivia), participo de movilidad estudiantil en la Universidad
+              Federal Grande Dorados(Brasil).
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-12 col-md-6">
+        <div class="unamad__speaker">
+          <img class="unamad__speaker-img" src="./fotosponentes/prieto.jpg" alt="Ponente">
+          <div class="unamad__speaker-info">
+            <h3>Jaime Prieto Luna</h3>
+            <p>
+              Ingeniero Electronico con Maestria en Ciencias Economicas, Graduado de la Universidad Mayor de San Marcos,
+              con
+              una alta experiencia en evaluador de proyectos de investigacion y electronica.
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-12 col-md-6">
+        <div class="unamad__speaker">
+          <img class="unamad__speaker-img" src="./fotosponentes/castanon.jpg" alt="Ponente">
+          <div class="unamad__speaker-info">
+            <h3>Cesar Armando Beltran Castañon</h3>
+            <p>
+              Profesor Asociado e Investigador Senior en Pontificia Universidad Católica del Perú, Dpto. de
+              Ingeniería,
+              Sección Ing. Informática. Estancia Post-Doctoral en Texas A&M University (2016), Doctor en Bioinformática
+              y
+              Magister en Ciencia de la Computación por la USP Sao Paulo, Brasil. Es Presidente de la IEEE Computer
+              Society Perú
+              (2019-2020). Lider científico del Grupo de Inteligencia Artificial de la PUCP (IA-PUCP). Lider Científico
+              del
+              Centro de Innovación Científica y Desarrollo Tecnológico en Ciencias de la Computación de la PUCP.
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-12 col-md-6">
+        <div class="unamad__speaker">
+          <img class="unamad__speaker-img" src="./fotosponentes/diodo.jpg" alt="Ponente">
+          <div class="unamad__speaker-info">
+            <h3>Diodomiro Baldomero Luque Carcasi</h3>
+            <p>
+              Especialista en Máquinas Eléctricas, Electrónica de Potencia, Energías Renovables e
+              Inteligencia Artificial. Es autor de inúmeros trabajos publicados en revistas y conferencias, es revisor
+              de
+              trabajos científicos en las áreas antes mencionadas.
+              Autor de diversos proyectos de desarrollo tecnológico "R&D" junto a la "Università degli Studi di
+              Padova",
+              UNIPID, Itália. Realizó un Post-Doctorado en la "Universidade Federal do ABC" donde desarrolló actividades
+              científicas orientadas a las redes inteligentes "Smart Grids". Actualmente es profesor del “Programa de
+              Mestrado
+              em Ciência da Computação – PPGCC”.
+
             </p>
           </div>
         </div>
@@ -240,50 +411,69 @@
         </div>
         <div class="col-md-4 col-sm-6 col-12 col-lg-3">
           <div class="unamad__taller">
-            <h4>Taller Nombre</h4>
-            <img src="public/images/taller.PNG" alt="">
+            <h4>Servidor remoto con nodeJS</h4>
+            <img src="./fototalleres/logofinal2.png" alt="">
           </div>
         </div>
+
         <div class="col-md-4 col-sm-6 col-12 col-lg-3">
           <div class="unamad__taller">
-            <h4>Taller Nombre</h4>
-            <img src="public/images/taller.PNG" alt="">
+            <h4>Object and face detection with OpenCV</h4>
+            <img src="./fototalleres/opencv.jpeg" alt="">
           </div>
         </div>
+
         <div class="col-md-4 col-sm-6 col-12 col-lg-3">
           <div class="unamad__taller">
-            <h4>Taller Nombre</h4>
-            <img src="public/images/taller.PNG" alt="">
+            <h4>desarrollo de aplicaciones moviles con CMS
+            </h4>
+            <img src="./fototalleres/cms.jpg" alt="">
           </div>
         </div>
+
         <div class="col-md-4 col-sm-6 col-12 col-lg-3">
           <div class="unamad__taller">
-            <h4>Taller Nombre</h4>
-            <img src="public/images/taller.PNG" alt="">
+            <h4>Data Analytics con R
+            </h4>
+            <img src="./fototalleres/Rlogo.png" alt="">
           </div>
         </div>
+
         <div class="col-md-4 col-sm-6 col-12 col-lg-3">
           <div class="unamad__taller">
-            <h4>Taller Nombre</h4>
-            <img src="public/images/taller.PNG" alt="">
+            <h4>Ciber Seguridad
+
+            </h4>
+            <img src="./fototalleres/ciberseguridad.jpg" alt="">
           </div>
         </div>
+
         <div class="col-md-4 col-sm-6 col-12 col-lg-3">
           <div class="unamad__taller">
-            <h4>Taller Nombre</h4>
-            <img src="public/images/taller.PNG" alt="">
+            <h4>IPv6 Cisco
+
+            </h4>
+            <img src="./fototalleres/IPv4-vs-IPv6.jpg" alt="">
           </div>
         </div>
+
         <div class="col-md-4 col-sm-6 col-12 col-lg-3">
           <div class="unamad__taller">
-            <h4>Taller Nombre</h4>
-            <img src="public/images/taller.PNG" alt="">
+            <h4>Tecnologías de la Información Geográficas libres para la gestión del terretorio "Q GIS"
+
+
+            </h4>
+            <img src="./fototalleres/qgis.png" alt="">
           </div>
         </div>
+
         <div class="col-md-4 col-sm-6 col-12 col-lg-3">
           <div class="unamad__taller">
-            <h4>Taller Nombre</h4>
-            <img src="public/images/taller.PNG" alt="">
+            <h4>Programación Microcontroladores ARM
+
+
+            </h4>
+            <img src="./fototalleres/ARM_0.png" alt="">
           </div>
         </div>
       </div>
@@ -338,17 +528,25 @@
     </div>
   </div>
   <footer class="unamad__footer" id="contacto">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-12">
           <h3 class="text-center">COATI</h3>
         </div>
-        <div class="unamad__footer-logo col-12 d-flex flex-wrap justify-content-md-center justify-content-lg-between justify-content flex-md-row align-items-center flex-column mb-50">
-          <img src="public/images/logoCarrera.png" alt="Logo carrera" width="300">
-          <img src="public/images/LOGO UNAMAD.png" alt="Logo Unamad">
+        <div class="unamad__footer-text col-7 mx-auto text-center text-md-start">
+          <div class="row">
+            <div class="col-md-6 mb-5 mb-md-0">
+              <h3>¿Quiénes somos?</h3>
+              <p>Universidad Nacional Amazónica Madre de Dios</p>
+              <p>Escuela Profesional de Ingeniería de Sistema e Informática</p>
+            </div>
+            <div class="col-md-6">
+              <h3 class="text-center">Puerto Maldonado, Madre de Dios - Perú</h3>
+            </div>
+          </div>
         </div>
         <div class="col-12 unamad__footer-inferior">
-          <p class="text-center">© 2019. All rights reserved | Design by BYTECODE.</p>
+          <p class="text-center text-white">© 2019. All rights reserved | Design by BYTECODE.</p>
         </div>
       </div>
     </div>
@@ -362,7 +560,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js" integrity="sha256-S1J4GVHHDMiirir9qsXWc8ZWw74PHHafpsHp5PXtjTs=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"
+    integrity="sha256-S1J4GVHHDMiirir9qsXWc8ZWw74PHHafpsHp5PXtjTs=" crossorigin="anonymous"></script>
   <script src="public/js/app.js"></script>
 </body>
 

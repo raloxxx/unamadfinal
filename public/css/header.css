@@ -1,0 +1,47 @@
+.unamad__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  padding: 3rem 0;
+  color: var(--color-white);
+}
+
+.unamad__menu {
+  text-align: center;
+  z-index: 2000;
+}
+
+.unamad__logo img {
+  border-radius: 1rem;
+  width: 20rem;
+  height: 6rem;
+}
+
+.unamad__menu-link {
+  color: var(--color-white);
+  font-size: 1.6rem;
+  padding-left: 2rem;
+  text-decoration: none !important;
+  transition: all .3s;
+}
+
+.unamad__menu-link:hover {
+  color: var(--color-gray);
+}
+
+.unamad__menu-icon {
+  display: none;
+  font-size: 2.2rem;
+  background-color: var(--color-primary);
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: all .3s;
+  z-index: 2000;
+}
+
+.unamad__menu-icon:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}

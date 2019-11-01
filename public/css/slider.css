@@ -1,0 +1,45 @@
+.unamad__title-carousel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--color-white);
+}
+
+.unamad__title-carousel h2 {
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: .5rem;
+  font-size: 3.5rem;
+}
+
+.unamad__title-carousel p {
+  font-size: 1.8rem;
+}
+
+.unamad__back-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .6);
+  z-index: 999;
+}
+
+.unamad__slider-icon {
+  z-index: 1000;
+}
+
+.unamad__slider-icon:hover .unamad__next-icon {
+  margin-left: .5rem;
+}
+
+.unamad__slider-icon:hover .unamad__prev-icon {
+  margin-right: .5rem;
+}
+
+.unamad__slider-icon i {
+  font-size: 3rem;
+  transition: all .3s;
+}

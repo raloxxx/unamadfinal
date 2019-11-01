@@ -13,6 +13,7 @@
     integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
   <link rel="stylesheet" href="public/css/base.css">
   <link rel="stylesheet" href="public/css/utilities.css">
+  <link rel="stylesheet" href="public/css/animations.css">
   <link rel="stylesheet" href="public/css/header.css">
   <link rel="stylesheet" href="public/css/base.css">
   <link rel="stylesheet" href="public/css/banner.css">
@@ -25,6 +26,16 @@
 </head>
 
 <body>
+  <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="unamad__content-cr">
+          <img src="public/images/cronograma.png" alt="Cronograma" class="unamad__img-cr">
+        </div>   
+      </div>
+    </div>
+  </div>
   <header class="unamad__header" id="inicio">
     <div class="container">
       <div class="row">
@@ -45,18 +56,21 @@
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="unamad__back-slider"></div>
     <div class="unamad__title-carousel">
-      <img src="public/images/Recurso 2.jpg" width="600" alt="">
+      <img src="public/images/logo03.png" class="unamad__logo-coati" alt="">
+      <p>CONGRESO INTERNACIONAL AMAZONICO DE TECNOLOGIA INFORMATICA</p>
       <p>“La innovación constante es la única forma de mantenerse competitivo”</p>
+      <button type="button" class="btn btn-primary" data-toggle="modal"
+        data-target=".bd-example-modal-xl">Cronograma</button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="public/images/1.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="public/images/3.jpg" class="d-block w-100" alt="...">
+        <img src="public/images/4.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="public/images/5.jpg" class="d-block w-100" alt="...">
+        <img src="public/images/3.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
     <a class="carousel-control-prev unamad__slider-icon" href="#carouselExampleControls" role="button"
@@ -425,7 +439,7 @@
 
         <div class="col-md-4 col-sm-6 col-12 col-lg-3">
           <div class="unamad__taller">
-            <h4>desarrollo de aplicaciones moviles con CMS
+            <h4>Desarrollo de aplicaciones moviles con CMS
             </h4>
             <img src="./fototalleres/cms.jpg" alt="">
           </div>
@@ -482,7 +496,7 @@
   <div class="container unamad__register px-5" id="inscripcion">
     <div class="row py-100 pt-0">
       <div class="col-12">
-        <h3 class="text-center unamad__title mb-50">Inscripcion</h3>
+        <h3 class="text-center unamad__title mb-50">Inscripción</h3>
       </div>
       <div class="col-12">
         <form class="unamad__form">
@@ -530,8 +544,8 @@
   <footer class="unamad__footer" id="contacto">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12">
-          <h3 class="text-center">COATI</h3>
+        <div class="col-12 d-flex justify-content-center">
+          <img class="unamad__footer-logo" src="public/images/logoblanco.png" alt="">
         </div>
         <div class="unamad__footer-text col-7 mx-auto text-center text-md-start">
           <div class="row">
@@ -551,6 +565,7 @@
       </div>
     </div>
   </footer>
+  <a href="#inicio"><i class="fas fa-home unamad__icon-home"></i></a>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

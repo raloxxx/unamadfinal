@@ -6,6 +6,8 @@
   transform: translate(-50%, -50%);
   text-align: center;
   color: var(--color-white);
+  animation-name: fadeOut;
+  animation-duration: 4s;
 }
 
 .unamad__title-carousel h2 {
@@ -42,4 +44,17 @@
 .unamad__slider-icon i {
   font-size: 3rem;
   transition: all .3s;
+}
+
+.unamad__img-cr {
+  width: 120rem;
+  height: 58rem;
+}
+
+.unamad__content-cr {
+  overflow-x: scroll;
+}
+
+.unamad__logo-coati {
+  width: 60rem;
 }

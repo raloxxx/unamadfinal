@@ -26,3 +26,25 @@
 .unamad__footer-inferior {
   padding: 4rem 0 2rem;
 }
+
+.unamad__footer-logo {
+  width: 30rem;
+}
+
+.unamad__icon-home {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  position: fixed;
+  font-size: 3rem;
+  z-index: 1000;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 1.5rem;
+  border-radius: 50%;
+  box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .3);
+  transition: all .3s;
+}
+
+.unamad__icon-home:hover {
+  background-color: var(--color-primary-2);
+}

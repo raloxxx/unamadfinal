@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>COATI</title>
+  <link rel="icon"
+    href="https://scontent.flim5-3.fna.fbcdn.net/v/t1.0-9/73046328_110321460394757_5447403649691025408_n.jpg?_nc_cat=105&_nc_oc=AQk1YdnI9jbd2vYTGoqvy23MMIv4FWdpO8PVtoYCvjLjEavwQKmxtlheUXgj3_Tt2GN9fdXuVCXHjs7oyQR6qCDb&_nc_ht=scontent.flim5-3.fna&oh=f2420ff31522dcafa6e223292c35e21c&oe=5E5F4211"
+    type="image/png">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet">
@@ -36,6 +39,17 @@
       </div>
     </div>
   </div>
+
+  <div class="modal fade bd-example-modal-xll" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="unamad__content-cr">
+          <img src="public/images/cronograma1.png" alt="Cronograma" class="unamad__img-cr">
+        </div>
+      </div>
+    </div>
+  </div>
   <header class="unamad__header" id="inicio">
     <div class="container">
       <div class="row">
@@ -57,10 +71,13 @@
     <div class="unamad__back-slider"></div>
     <div class="unamad__title-carousel">
       <img src="public/images/logo03.png" class="unamad__logo-coati" alt="">
-      <p>CONGRESO INTERNACIONAL AMAZONICO DE TECNOLOGIA INFORMATICA</p>
+      <p>CONGRESO INTERNACIONAL AMAZÓNICO DE TECNOLOGÍA INFORMÁTICA</p>
       <p>“La innovación constante es la única forma de mantenerse competitivo”</p>
       <button type="button" style="font-size:20px;" class="btn btn-primary btn-lg btn-block" data-toggle="modal"
-        data-target=".bd-example-modal-xl">Cronograma del evento</button>
+        data-target=".bd-example-modal-xl">Cronograma Ponencias (Auditorio Central)</button>
+
+      <button type="button" style="font-size:20px;" class="btn btn-primary btn-lg btn-block" data-toggle="modal"
+        data-target=".bd-example-modal-xll">Cronograma Talleres (Laboratios E.I.S.I)</button>
     </div>
     <div class="carousel-inner">
 
@@ -87,54 +104,121 @@
     </a>
   </div>
 
-  <div style="margin-top: 20px;" class="container">
-    <img class="img-fluid" src="./public/images/Recurso 2.jpg" alt="">
-  </div>
 
-  </div>
-
-  </div>
 
   <div class="container" id="acerca">
+
     <div class="row py-100">
       <div class="col-12">
         <h3 class="text-center unamad__title mb-50">Acerca de</h3>
       </div>
-      <div class="col-lg-6 col">
-        <div class="row mb-md-5">
-          <div class="col-lg-6 col-md-6">
-            <div class="unamad__card text-center">
-              <i class="fas fa-cogs unamad__card-icon mb-5"></i>
-              <h3 class="unamad__card-title mb-4">Talleres</h3>
-              <p class="unamad__card-text">Aprende nuevas tecnologias y potencia tu conocimiento.</p>
-            </div>
+
+      <div style="margin-top: 20px;" class="col-12">
+        <img class="img-fluid" src="./public/images/Recurso 2.jpg" alt="">
+      </div>
+
+      <div style="margin-top: 50px;" class="col-12">
+        <div class="text-center">
+          <p style="font-size: 15px; color: grey;">Organiza:</p>
+          <h3 style="font-size: 37px; color: #db1e4a;">Universidad Nacional Amazónica De Madre de Dios</h3>
+          <h4 style="font-size: 20px; color: #8c3d8e;">Escuela profesional de Ingeniería de Sistemas e Informática</h4>
+          <hr>
+        </div>
+
+        <div class="row justify-content-around">
+          <div class="col col-lg-3">
+            <img class="img-fluid" src="./public/images/LOGO UNAMAD.png" alt="">
           </div>
-          <div class="col-lg-6 col-md-6">
-            <div class="unamad__card text-center">
-              <i class="fas fa-headphones unamad__card-icon mb-5"></i>
-              <h3 class="unamad__card-title mb-4">Cultura</h3>
-              <p class="unamad__card-text">Disfruta y se parte de nuestra amplia cultura regional.</p>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6">
-            <div class="unamad__card text-center">
-              <i class="fas fa-users unamad__card-icon mb-5"></i>
-              <h3 class="unamad__card-title mb-4">Ponencias</h3>
-              <p class="unamad__card-text">Enterate de las ultimas tendencias en tecnologia informática.</p>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6">
-            <div class="unamad__card text-center">
-              <i class="fas fa-cubes unamad__card-icon mb-5"></i>
-              <h3 class="unamad__card-title mb-4">Recreación</h3>
-              <p class="unamad__card-text">Disfruta y diviertete en compañia de los demas participantes.</p>
-            </div>
+          <div class="col col-lg-3">
+            <img class="img-fluid" src="./public/images/logoCarrera.png" alt="">
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
-        <img class="w-100" src="./public/images/plaza.jpg" alt="image">
+      <div style="margin-top: 50px;" class="col-12">
+        <div class="text-center">
+          <h3 style="font-size: 15px; color: #db1e4a;">Participan:</h3>
+          <hr>
+        </div>
+
+        <div class="row justify-content-around">
+
+
+          <div class="col col-lg-1">
+            <img class="img-fluid" src="./public/images/LOGO UNIVERSIDADES/UNIVERSIDA DE SAN AGUSTIN DE AREQUIPA.jpg"
+              alt="">
+          </div>
+
+          <div class="col col-lg-1">
+            <img class="img-fluid" src="./public/images/LOGO UNIVERSIDADES/UFAC.png" alt="">
+          </div>
+          <div class="col col-lg-1">
+            <img class="img-fluid" src="./public/images/LOGO UNAMAD.png" alt="">
+          </div>
+
+          <div class="col col-lg-1">
+            <img class="img-fluid" src="./public/images/LOGO UNIVERSIDADES/UNIVERSIDAD NACIONAL DE PANDO.jpg" alt="">
+          </div>
+
+          <div class="col col-lg-1">
+            <img class="img-fluid" src="./public/images/LOGO UNIVERSIDADES/Universidad-Nacional-Mayor-de-San-Marcos.png"
+              alt="">
+          </div>
+
+        </div>
+
+        <div class="row justify-content-around">
+          <div class="col col-lg-3">
+            <img class="img-fluid" src="./public/images/LOGO UNIVERSIDADES/PUCP.jpg" alt="">
+          </div>
+          <div class="col col-lg-1">
+            <img class="img-fluid" src="./public/images/LOGO UNIVERSIDADES/ALTIPLANA DE PUNO.png" alt="">
+          </div>
+          <div class="col col-lg-3">
+            <img class="img-fluid"
+              src="./public/images/LOGO UNIVERSIDADES/saint petersburg electrotechnical university.png" alt="">
+          </div>
+
+        </div>
+
       </div>
+      <div style="margin-top: 50px;" class="row">
+        <div class="col-lg-6 col">
+          <div class="row mb-md-5">
+            <div class="col-lg-6 col-md-6">
+              <div class="unamad__card text-center">
+                <i class="fas fa-cogs unamad__card-icon mb-5"></i>
+                <h3 class="unamad__card-title mb-4">Talleres</h3>
+                <p class="unamad__card-text">Aprende nuevas tecnologias y potencia tu conocimiento.</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="unamad__card text-center">
+                <i class="fas fa-headphones unamad__card-icon mb-5"></i>
+                <h3 class="unamad__card-title mb-4">Cultura</h3>
+                <p class="unamad__card-text">Disfruta y se parte de nuestra amplia cultura regional.</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="unamad__card text-center">
+                <i class="fas fa-users unamad__card-icon mb-5"></i>
+                <h3 class="unamad__card-title mb-4">Ponencias</h3>
+                <p class="unamad__card-text">Enterate de las ultimas tendencias en tecnologia informática.</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="unamad__card text-center">
+                <i class="fas fa-cubes unamad__card-icon mb-5"></i>
+                <h3 class="unamad__card-title mb-4">Recreación</h3>
+                <p class="unamad__card-text">Disfruta y diviertete en compañia de los demas participantes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img class="w-100" src="./public/images/plaza.jpg" alt="image">
+        </div>
+      </div>
+
     </div>
   </div>
   <div class="unamad__banner">
@@ -145,7 +229,7 @@
           <p class="unamad__banner-text" style="font-weight: bold;">PARTICIPA DE ESTE GRAN EVENTO INTERNACIONAL QUE
             CONTARA
             CON LA PARTICIPACION DE PONENTES, CON UNA GRAN EXPERIENCIA
-            EN INVESTIACIÓN, DE BOLIVIA, BRASIL Y PERÚ, QUE SE LLEVARA ACABO EN
+            EN INVESTIGACIÓN, DE BOLIVIA, BRASIL Y PERÚ, QUE SE LLEVARA ACABO EN
           </p>
           <h4 class="unamad__banner-subtitle">
             <span>Noviembre</span>, Te esperamos
@@ -178,114 +262,174 @@
       <div class="col-12">
         <h3 class="text-center unamad__title mb-50">Ponentes</h3>
       </div>
+
       <div class="col-lg-4 col-sm-12 col-md-6">
         <div class="unamad__speaker">
+          <img class="unamad__speaker-img" src="./fotosponentes/barrientos.jpg" alt="Ponente">
+          <img style="    width: 70px;
+                            position: absolute;
+                            bottom: 0;
+                            display: flex;" src="./fotosponentes/brasil.png" alt="">
           <div class="unamad__speaker-info">
-            <h3>NAVARRO VEGA JOSE CARLOS</h3>
+            <h4>JOSE ESTEBAN BARRIENTOS APUMAYTA</h4>
+            <p>
+              Graduação em Electrónica pelo Instituto de Educación Superior Tecnológico Público José Pardo (IESTPJP).
+              Graduação em
+              Engenheira de Sistemas pela Universidad Nacional Tecnológica de Lima Sur (UNTELS). Pós-Graduação em
+              Ciência da
+              Computação pela Universidade Federal Do Acre (UFAC). área de interesse Métodos de Otimização, Algoritmos
+              Genéticos e
+              Processamento Digital de Imagens
+              <hr>
+              TEMA: “Implementação de um sistema de investimento usando Algoritmos Genéticos para otimizar o ganho total
+              máximo da
+              distribuição monetária das empresas”
+
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-12 col-md-6">
+        <div class="unamad__speaker">
+          <img style="    width: 70px;
+    position: absolute;
+    bottom: 0;
+    display: flex;" src="./fotosponentes/peru.png" alt="">
+          <div class="unamad__speaker-info">
+            <h4>M.sc. JORGE LEONCIO GUERRA GUERRA</h4>
 
             <p>
-              Egresado de la Maestría Gerencia de Tecnologías de la Información
-              de la Universidad Nacional San Agustín de Arequipa, Ingeniero
-              Informático y de Sistemas de la Universidad Nacional San Antonio
-              Abad del Cusco, estudios en herramientas GIS, Redes y Teleproceso,
-              Infraestructura de Datos Espaciales. Ocupó cargos como Jefe de la
-              Unidad de Informática, coordinador de la Infraestructura de Datos
-              Espaciales y Analista de Sistemas del Gobierno Regional de Madre
-              de Dios.
+              Investigador de la Facultad de Ingenieria de Sistemas e Informatica de la UNMSM, presidente de las
+              Jornadas
+              Peruanas de Computacion en el 2008, Desarrollo de investigaciones en Sistemas
+              Multiagentes,
+              Sistemas Distribuidos, Open Hardware, Cloud Computing, asi como ponencias en CLEI, INSOVIÑA,
+              IEEE INTERCON, CONEISC, COREIS. Articulos en IEE INTERCON 2013 y IEEE INTERCON 2014,
+              SIMBIG 2016, y ACM
+              ITICSE 2016, 2017 y 2018. Responsable del Núcleo de Investigación e Innovación de Robotica e Interne de
+              las Cosas UNMSM.
+              <hr>
+              TEMA: "smart Objects aplicado a Internet de las Cosas: Aplicaciones y Casos de Uso"
+
             </p>
 
           </div>
-          <img class="unamad__speaker-img" src="./fotosponentes/navarro.jpg" alt="Ponente">
+          <img class="unamad__speaker-img" src="./fotosponentes/GUERRA.jpg" alt="Ponente">
+
         </div>
       </div>
+
       <div class="col-lg-4 col-sm-12 col-md-6">
         <div class="unamad__speaker">
+          <img style="    width: 70px;
+              position: absolute;
+              bottom: 0;
+              display: flex;" src="./fotosponentes/bolivia.png" alt="">
           <div class="unamad__speaker-info">
-            <h3>NINA CHOQUEHUAYTA WILDER</h3>
+            <h4>M.Sc. NELSON RAMIRO CHOCLO RUBIN DE CELIS</h4>
+
             <p>
-              M.Cs. Informática mención Tecnologías de Información en
-              la Universidad de San Agustín. Con experiencia en Artificial
-              Intelligence, GeoBigData, Remote Sensing, High Performace
-              Computing, Cloud Computing y Mobile Computing. Actualmente soy
-              docente en la Universidad Tecnologica del Perú e investigador en
-              Centro de Investigación, Transferencia de tecnologías y Desarrollo
-              de Software I+D+i (CiTeSoft) de la UNSA. Tambien tengo el cargo
-              CEO de la empresa VEOX, realiza investigación
-              aplicada en BigData, Remote Sensing y Artificial Intelligence en
-              el ámbito de Pesca y Agricultura.
+              Ingenierío de Sistemas graduado de la (Universidad Amazónica de Pando - Bolivia).
+              Magister Scientiarum (M.Sc.) en Administración y Gestión Educativa).
+              Ha desempeñado su labor en La Unidad de Sistemas de la Corte Departamental Electoral de Pando,
+              Unidad de Catastro Urbano del Municipio de Cobija-Pando, Unidad de Sistemas del Gobierno Departamental de
+              Pando,
+              Unidad de Registros de la Universidad Técnica Privada Cosmos, Laboratorio de Sistemas de la Universidad
+              Amazónica de Pando.
+              <hr>
+              TEMA: "La Telesalud y Telehospitales como herramientas de diagnóstico y tratamiento de enfermedades"
             </p>
+
           </div>
-          <img class="unamad__speaker-img" src="./fotosponentes/nina.jpg" alt="Ponente">
+          <img class="unamad__speaker-img" src="./fotosponentes/choclo.PNG" alt="Ponente">
         </div>
       </div>
+
       <div class="col-lg-4 col-sm-12 col-md-6">
         <div class="unamad__speaker">
+          <img class="unamad__speaker-img" src="./fotosponentes/diodo.jpg" alt="Ponente">
+          <img style="    width: 70px;
+                      position: absolute;
+                      bottom: 0;
+                      display: flex;" src="./fotosponentes/brasil.png" alt="">
           <div class="unamad__speaker-info">
-            <h3>CRUZ DE LA CRUZ JOSE EMMANUEL</h3>
+            <h4>Dr. DIODOMIRO BALDOMERO LUQUE CARCASI</h4>
             <p>
-              Doctor en ciencias: ingenieria mecatronico en la Universidad
-              Nacional San Agustin bachiller en ingenieria electronico de la
-              universidad nacional de San Agustin y Maestro en ciencias de la
-              ingenieria electronica, especialidad, con mencion en
-              automatizacion de procesos con una amplia experiencia en
-              produccion cientifica y proyectos de investigacion. Autor de
-              distintos articulos en revistas cientificas.
-            </p>
-          </div>
-          <img class="unamad__speaker-img" src="./fotosponentes/josecruz.jpg" alt="Ponente">
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-12 col-md-6">
-        <div class="unamad__speaker">
-          <img class="unamad__speaker-img" src="./fotosponentes/helar.jpg" alt="Ponente">
-          <div class="unamad__speaker-info">
-            <h3>HELARF FERRER CALSINA CONDORI</h3>
-            <p>
-              Ingeniero de Electrónico de la UNA-Puno,
-              Magister Scientae en Informática, Doctorando en Ciencia,
-              Tecnología y Ambiente de la UNA - Puno.
-              Presidente del Capítulo de Ingeniería Electrónica del Colegio de
-              Ingenieros del Perú – Consejo Departamental Puno. Gold Member of
-              Institute of Institute of Electrical and Electronics Engineers.
-              Especialista en desarrollo de Proyectos en Telecomunicaciones y
-              Telemática. Consultor de proyectos en telecomunicaciones. Gerente
-              general de FERRER INGENIEROS SAC. Publicaciones de Artículos
-              científicos en IEEE Xplore.
+              Especialista en Máquinas Eléctricas, Electrónica de Potencia, Energías Renovables e
+              Inteligencia Artificial. Es autor de inúmeros trabajos publicados, es revisor
+              de trabajos científicos.
+              Autor de diversos proyectos de desarrollo tecnológico "R&D" junto a la "Università degli Studi di
+              Padova". Post-Doctorado en la "Universidade Federal do ABC" donde desarrolló actividades
+              científicas orientadas a las redes inteligentes "Smart Grids". Actualmente es profesor del “Programa de
+              Mestrado
+              em Ciência da Computação”.
+              <hr>
+              TEMA: "Redes electricas inteligentes en el contexto de ciudades Inteligentes "Smart Grids + Smart Cities"
+
             </p>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-sm-12 col-md-6">
         <div class="unamad__speaker">
-          <img class="unamad__speaker-img" src="./fotosponentes/vidangos.jpg" alt="Ponente">
+          <img class="unamad__speaker-img" src="./fotosponentes/castanon.jpg" alt="Ponente">
+          <img style="    width: 70px;
+                      position: absolute;
+                      bottom: 0;
+                      display: flex;" src="./fotosponentes/peru.png" alt="">
           <div class="unamad__speaker-info">
-            <h3>GABINO REY VIDANGOS PONCE</h3>
+            <h4>Dr. CESAR ARMANDO BELTRAN CASTAÑON</h4>
             <p>
-              Es un Ingeniero Electronico con Maestria en Automatizacion y
-              Mecatronica, Graduado de la UNA-Puno Peru y LETI San Petersburgo –
-              Rusia.
+              Profesor Asociado e Investigador Senior en Pontificia Universidad Católica del Perú, Dpto. de
+              Ingeniería. Estancia Post-Doctoral en Texas A&M University (2016), Doctor en Bioinformática
+              y
+              Magister en Ciencia de la Computación por la USP Sao Paulo, Brasil. Es Presidente de la IEEE Computer
+              Society Perú
+              (2019-2020). Lider científico del Grupo de Inteligencia Artificial de la PUCP (IA-PUCP). Lider Científico
+              del
+              Centro de Innovación Científica y Desarrollo Tecnológico en Ciencias de la Computación de la PUCP.
+              <hr>
+              TEMA: "Detección de cuerpos de agua en imágines satelitales mediante redes convolucionales"
             </p>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-sm-12 col-md-6">
         <div class="unamad__speaker">
-          <img class="unamad__speaker-img" src="./fotosponentes/cristina.jpg" alt="Ponente">
+          <img style="    width: 70px;
+              position: absolute;
+              bottom: 0;
+              display: flex;" src="./fotosponentes/bolivia.png" alt="">
           <div class="unamad__speaker-info">
-            <h3>MOZO ZARATE YESSICA CRISTINA</h3>
+            <h4>Dr. LENIN HUAYTA FLORES</h4>
+
             <p>
-              Profesional en Informática y Sistemas con maestría en Educación, amplia experiencia en Capacitaciones a
-              Docentes y
-              docencia en educación Superior. Manejo de herramientas informáticas en el ámbito educativo.
+              MAGISTER SCIENTIAE EN INGENIERÍA DE SISTEMAS - UNAP
+              MAESTRÍA EN INGENIERÍA DE SISTEMAS – UNSA (ESTUDIOS CONCLUIDOS)
+              DOCTOR SCIENTIAE CIENCIAS DE LA COMPUTACIÓN (EN ESTUDIOS), SEGUNDA ESPECIALIDAD EN TECNOLOGÍA
+              COMPUTACIONAL E INFORMÁTICA EDUCATIVA, CON UNA AMPLIA EXPERIENCIA EN INVESTIACIÓN RELACIONADA
+              A LA INTELIGENCIA ARTIFICIAL.
+              <hr>
+              TEMA: "Algoritmo de Red Neuronal Convolucional utilizando API DE KERAS DE TENSORFLOW para el
+              reconocimiento de la escritura
+              Inka"
             </p>
+
           </div>
+          <img class="unamad__speaker-img" src="./fotosponentes/LENIN.jpg" alt="Ponente">
         </div>
       </div>
+
       <div class="col-lg-4 col-sm-12 col-md-6">
         <div class="unamad__speaker">
           <img class="unamad__speaker-img" src="./fotosponentes/churachambi.jpg" alt="Ponente">
+          <img style="    width: 70px;
+            position: absolute;
+            bottom: 0;
+            display: flex;" src="./fotosponentes/brasil.jpg" alt="">
           <div class="unamad__speaker-info">
-            <h3>MSc. Roberto Chura Chambi</h3>
+            <h4>M.Sc. ROBERTO CHURA CHAMBI</h4>
             <p>
               Graduado en la Universidad Nacional de San Agustín de Arequipa en Ingeniería Electrónica, con
               maestría en Ingeniería Eléctrica por la Universidade de São Paulo.
@@ -296,6 +440,109 @@
               Front-end y Back-end
               para el diseño de circuitos integrados digitales, Arquitectura de
               ordenadores.
+
+              <hr>
+              TEMA: "El mundo digital y el desarrollo de los Circuitos Integrados"s
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-12 col-md-6">
+
+        <div class="unamad__speaker">
+          <img style="    width: 70px;
+                      position: absolute;
+                      bottom: 0;
+                      display: flex;" src="./fotosponentes/peru.png" alt="">
+          <div class="unamad__speaker-info">
+            <h4>M.Sc. WILDER NINA CHOQUEHUAYTA</h4>
+            <p>
+              M.Cs. Informática mención Tecnologías de Información en
+              la Universidad de San Agustín. Experiencia en Artificial
+              Intelligence, GeoBigData, Remote Sensing, High Performace
+              Computing, Cloud Computing y Mobile Computing. Actualmente soy
+              docente en la UTP - Perú e investigador en
+              Centro de Investigación, Transferencia de tecnologías y Desarrollo
+              de Software I+D+i (CiTeSoft) de la UNSA.
+              CEO de la empresa VEOX, realiza investigación
+              aplicada en BigData, Remote Sensing y Artificial Intelligence en
+              el ámbito de Pesca y Agricultura.
+
+              <hr>
+              TEMA: "Imágines satelitales e inteligencia artificial enfocado a la deforestación en Madre de Dios"
+            </p>
+          </div>
+          <img class="unamad__speaker-img" src="./fotosponentes/nina.jpg" alt="Ponente">
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12 col-md-6">
+        <div class="unamad__speaker">
+          <img style="    width: 70px;
+                      position: absolute;
+                      bottom: 0;
+                      display: flex;" src="./fotosponentes/peru.png" alt="">
+          <div class="unamad__speaker-info">
+            <h4>Dr. JOSE EMMANUEL CRUZ DE LA CRUZ</h4>
+            <p>
+              Doctor en ciencias: ingenieria mecatronico en la Universidad
+              Nacional San Agustin bachiller en ingenieria electronico de la
+              universidad nacional de San Agustin y Maestro en ciencias de la
+              ingenieria electronica, especialidad, con mencion en
+              automatizacion de procesos con una amplia experiencia en
+              produccion cientifica y proyectos de investigacion. Autor de
+              distintos articulos en revistas cientificas.
+
+              <hr>
+              TEMA: "Cisco Ciber Seguridad - CISCO"
+            </p>
+          </div>
+          <img class="unamad__speaker-img" src="./fotosponentes/josecruz.jpg" alt="Ponente">
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12 col-md-6">
+        <div class="unamad__speaker">
+          <img class="unamad__speaker-img" src="./fotosponentes/helar.jpg" alt="Ponente">
+          <img style="    width: 70px;
+                      position: absolute;
+                      bottom: 0;
+                      display: flex;" src="./fotosponentes/bolivia.png" alt="">
+          <div class="unamad__speaker-info">
+            <h4>Dr(c). HELARF FERRER CALSINA CONDORI</h4>
+            <p>
+              Ingeniero de Electrónico de la UNA-Puno,
+              Magister Scientae en Informática, Doctorando en Ciencia,
+              Tecnología y Ambiente de la UNA - Puno.
+              Presidente del Capítulo de Ingeniería Electrónica del Colegio de
+              Ingenieros del Perú – Consejo Departamental Puno. Gold Member of
+              Institute of Institute of Electrical and Electronics Engineers.
+              Especialista en desarrollo de Proyectos en Telecomunicaciones y
+              Telemática. Gerente
+              general de FERRER INGENIEROS SAC. Publicaciones de Artículos
+              científicos en IEEE Xplore.
+
+              <hr>
+              TEMA: "Ipv6 transicion en el peru"
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12 col-md-6">
+        <div class="unamad__speaker">
+          <img class="unamad__speaker-img" src="./fotosponentes/vidangos.jpg" alt="Ponente">
+          <img style="    width: 70px;
+                      position: absolute;
+                      bottom: 0;
+                      display: flex;" src="./fotosponentes/peru.png" alt="">
+          <div class="unamad__speaker-info">
+            <h4>M.Sc. GABINO REY VIDANGOS PONCE</h4>
+            <p>
+              Es un Ingeniero Electronico con Maestria en Automatizacion y
+              Mecatronica, Graduado de la UNA-Puno Peru y LETI San Petersburgo –
+              Rusia.
+
+              <hr>
+              TEMA: "Modeling of Mechatronics Sistems"
             </p>
           </div>
         </div>
@@ -303,28 +550,25 @@
 
       <div class="col-lg-4 col-sm-12 col-md-6">
         <div class="unamad__speaker">
-          <img class="unamad__speaker-img" src="./fotosponentes/barrientos.jpg" alt="Ponente">
+          <img class="unamad__speaker-img" src="./fotosponentes/yanahuaya.PNG" alt="Ponente">
+          <img style="    width: 70px;
+                      position: absolute;
+                      bottom: 0;
+                      display: flex;" src="./fotosponentes/bolivia.png" alt="">
           <div class="unamad__speaker-info">
-            <h3>JOSE ESTEBAN BARRIENTOS APUMAYTA</h3>
+            <h4>M.Sc. ALEX YANAHUAYA ARCE</h4>
             <p>
-              Graduação em Electrónica pelo Instituto de Educación Superior Tecnológico Público José Pardo (IESTPJP).
-              Graduação em
-              Engenheira de Sistemas pela Universidad Nacional Tecnológica de Lima Sur (UNTELS). Pós-Graduação em
-              Ciência da
-              Computação pela Universidade Federal Do Acre (UFAC). área de interesse Métodos de Otimização, Algoritmos
-              Genéticos e
-              Processamento Digital de Imagens
-            </p>
-          </div>
-        </div>
-      </div>
+              Experiencia en Inteligencia Artificial, Maestría en Reconocimiento de Formas
+              e Imagen Digital UPV (España), Maestría en Diseño y Manufactura
+              Asistida por Computadora CAD/CAE/CAM/CNC Universidad Mayor de San Simón (Bolivia),
+              Supervisión y Automatización Totalmente Integrada Industrial SENA (Colombia), Robótica
+              Aplicada CNAD (México), Diplomado en Geomática Aplicada a las
+              Ciencias Agropecuarias, Forestales y Ambientales, UMSS (Bolivia).
 
-      <div class="col-lg-4 col-sm-12 col-md-6">
-        <div class="unamad__speaker">
-          <img class="unamad__speaker-img" src="./fotosponentes/silueta.png" alt="Ponente">
-          <div class="unamad__speaker-info">
-            <h3>Msc. Alex Yanahuaya Arce</h3>
-            <p>
+              <hr>
+              TEMA: "Precisión de las imágenes fotogramétricas obtenidas con drones y analizados con DEEP LEARNING
+              respecto al Censo
+              forestal, en la identificación de árboles de castaña en los bosques de la comunidad Triunfo"
             </p>
           </div>
         </div>
@@ -333,8 +577,12 @@
       <div class="col-lg-4 col-sm-12 col-md-6">
         <div class="unamad__speaker">
           <img class="unamad__speaker-img" src="./fotosponentes/calle.jpg" alt="Ponente">
+          <img style="    width: 70px;
+                      position: absolute;
+                      bottom: 0;
+                      display: flex;" src="./fotosponentes/bolivia.png" alt="">
           <div class="unamad__speaker-info">
-            <h3>Msc. Humberto Fernandez Calle</h3>
+            <h4>M.Sc. HUMBERTO FERNANDEZ CALLE</h4>
             <p>
               Licenciado en Informática, Universidad Mayor de San Andrés (UMSA), Magister en Ciencias de la Educación
               Superior,
@@ -345,6 +593,9 @@
               científica y Diplomado en Formación Basada en competencias (UAP), Diplomado en seguridad en informática
               (UAP).
               Doctorante en Ciencias de la Educación 2012-2019.
+
+              <hr>
+              TEMA: "Uso de Aplicaciones Móviles con Código QR en el transporte público para prevenir hechos delictivos"
             </p>
           </div>
         </div>
@@ -353,8 +604,12 @@
       <div class="col-lg-4 col-sm-12 col-md-6">
         <div class="unamad__speaker">
           <img class="unamad__speaker-img" src="./fotosponentes/yapu.PNG" alt="Ponente">
+          <img style="    width: 70px;
+                      position: absolute;
+                      bottom: 0;
+                      display: flex;" src="./fotosponentes/bolivia.png" alt="">
           <div class="unamad__speaker-info">
-            <h3>Univ. Efrain Yapu</h3>
+            <h4>Univ. EFRAIN YAPU</h4>
             <p>
               Nacionalidad Boliviana, el Univ. Efrain Yapu Huanca es estudiante investigador de la carrera de
               Ingenieria de Sistemas especialista en Realidad Aumentada.
@@ -364,6 +619,11 @@
               Universidad Amazonica de Pando(Bolivia), participo de movilidad estudiantil en la Universidad
               Federal Grande Dorados(Brasil).
 
+              <hr>
+              TEMA: "Aplicación Móvil en Android con Realidad Aumentada para Sala de Mamiferos del Museo De Historia
+              Natural Pedro
+              Villalobos de la Universidad Amazónica de Pando"
+
             </p>
           </div>
         </div>
@@ -372,13 +632,18 @@
       <div class="col-lg-4 col-sm-12 col-md-6">
         <div class="unamad__speaker">
           <img class="unamad__speaker-img" src="./fotosponentes/prieto.jpg" alt="Ponente">
+          <img style="    width: 70px;
+                      position: absolute;
+                      bottom: 0;
+                      display: flex;" src="./fotosponentes/peru.png" alt="">
           <div class="unamad__speaker-info">
-            <h3>Jaime Prieto Luna</h3>
+            <h4>M.Sc. JAIME PRIETO LUNA</h4>
             <p>
               Ingeniero Electronico con Maestria en Ciencias Economicas, Graduado de la Universidad Mayor de San Marcos,
               con
-              una alta experiencia en evaluador de proyectos de investigacion y electronica.
-
+              una amplia experiencia como evaluador de proyectos de investigacion y electronica.
+              <hr>
+              TEMA: "Smart Cities"
             </p>
           </div>
         </div>
@@ -386,46 +651,56 @@
 
       <div class="col-lg-4 col-sm-12 col-md-6">
         <div class="unamad__speaker">
-          <img class="unamad__speaker-img" src="./fotosponentes/castanon.jpg" alt="Ponente">
+          <img style="    width: 70px;
+                    position: absolute;
+                    bottom: 0;
+                    display: flex;" src="./fotosponentes/peru.png" alt="">
           <div class="unamad__speaker-info">
-            <h3>Cesar Armando Beltran Castañon</h3>
-            <p>
-              Profesor Asociado e Investigador Senior en Pontificia Universidad Católica del Perú, Dpto. de
-              Ingeniería,
-              Sección Ing. Informática. Estancia Post-Doctoral en Texas A&M University (2016), Doctor en Bioinformática
-              y
-              Magister en Ciencia de la Computación por la USP Sao Paulo, Brasil. Es Presidente de la IEEE Computer
-              Society Perú
-              (2019-2020). Lider científico del Grupo de Inteligencia Artificial de la PUCP (IA-PUCP). Lider Científico
-              del
-              Centro de Innovación Científica y Desarrollo Tecnológico en Ciencias de la Computación de la PUCP.
+            <h4>M.Sc. JOSE CARLOS NAVARRO VEGA </h4>
 
+            <p>
+              Egresado de la Maestría Gerencia de Tecnologías de la Información
+              de la Universidad Nacional San Agustín de Arequipa, Ingeniero
+              Informático y de Sistemas de la Universidad Nacional San Antonio
+              Abad del Cusco, estudios en herramientas GIS, Redes y Teleproceso,
+              Infraestructura de Datos Espaciales. Ocupó cargos como Jefe de la
+              Unidad de Informática, coordinador de la Infraestructura de Datos
+              Espaciales y Analista de Sistemas del Gobierno Regional de Madre
+              de Dios.
+
+              <hr>
+              TEMA: "Infraestructura de datos espaciales para el catastro forestal - rural en Madre de Dios"
             </p>
+
           </div>
+          <img class="unamad__speaker-img" src="./fotosponentes/navarro.jpg" alt="Ponente">
         </div>
       </div>
 
       <div class="col-lg-4 col-sm-12 col-md-6">
         <div class="unamad__speaker">
-          <img class="unamad__speaker-img" src="./fotosponentes/diodo.jpg" alt="Ponente">
+          <img class="unamad__speaker-img" src="./fotosponentes/cristina.jpg" alt="Ponente">
+          <img style="    width: 70px;
+                            position: absolute;
+                            bottom: 0;
+                            display: flex;" src="./fotosponentes/peru.png" alt="">
           <div class="unamad__speaker-info">
-            <h3>Diodomiro Baldomero Luque Carcasi</h3>
+            <h4>Mg. YESSICA CRISTINA MOZO ZARATE</h4>
             <p>
-              Especialista en Máquinas Eléctricas, Electrónica de Potencia, Energías Renovables e
-              Inteligencia Artificial. Es autor de inúmeros trabajos publicados en revistas y conferencias, es revisor
-              de
-              trabajos científicos en las áreas antes mencionadas.
-              Autor de diversos proyectos de desarrollo tecnológico "R&D" junto a la "Università degli Studi di
-              Padova",
-              UNIPID, Itália. Realizó un Post-Doctorado en la "Universidade Federal do ABC" donde desarrolló actividades
-              científicas orientadas a las redes inteligentes "Smart Grids". Actualmente es profesor del “Programa de
-              Mestrado
-              em Ciência da Computação – PPGCC”.
+              Profesional en Informática y Sistemas con maestría en Educación, amplia experiencia en Capacitaciones a
+              Docentes y
+              docencia en educación Superior. Manejo de herramientas informáticas en el ámbito educativo.
 
+              <hr>
+              TEMA: "Sistemas blandos en el desarrollo humano"
             </p>
           </div>
         </div>
       </div>
+
+
+
+
     </div>
   </div>
   <div class="container unamad__tallers" id="talleres">
@@ -507,7 +782,13 @@
   <div class="container unamad__register px-5" id="inscripcion">
     <div class="row py-100 pt-0">
       <div class="col-12">
-        <h3 class="text-center unamad__title mb-50">Inscripción</h3>
+        <h3 class="text-center unamad__title mb-50">
+          Inscripción
+
+        </h3>
+        <p style="font-size: 15px;">
+          Completa tus datos correctamente, considera que esta informacion sera utilizada para emitir tu certificado.
+        </p>
       </div>
       <div class="col-12">
         <form class="unamad__form">
@@ -543,12 +824,13 @@
             <label class="unamad__form-label" for="university">Universidad</label>
             <input type="text" class="unamad__input" id="university">
           </div>
+          <div class="alert alert-success text-center" id="alertSuccess">Registrado correctamente :)</div>
+          <div class="alert alert-danger text-center" id="alertDanger">Ups :( tenemos problemas para registrar</div>
           <div class="form-group">
             <input id="btn" type="submit" value="Registrarse" class="unamad__submit">
           </div>
         </form>
-        <div class="alert alert-success text-center" id="alertSuccess">Registrado correctamente :)</div>
-        <div class="alert alert-danger text-center" id="alertDanger">Ups :( tenemos problemas para registrar</div>
+
       </div>
     </div>
   </div>
